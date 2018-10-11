@@ -18,7 +18,8 @@ app.all('/', (req, res)=>{
 });
 
 app.all('*', (req, res)=>{
-   res.send('<h1>Sorry, this is not the page you\'re looking for...</h1>');
+   res.send('<h1>Sorry, this is not the page you\'re looking for...' +
+       '</h1>');
 });
 
 app.listen(3000, ()=>{
